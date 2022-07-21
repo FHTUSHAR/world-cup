@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+@keyframes example {
+    0% {
+        left: 0;
+        top: 0;
+    }
+
+
+
+    100% {
+        left: 200px;
+        top: 0px;
+    }
+}
+
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -39,6 +53,29 @@ p {
 .banner-left a:hover {
     background-color: rgb(105, 243, 243);
     color: black;
+}
+
+.animation {
+    margin-top: 30px;
+    height: 30px;
+}
+
+.welcome {
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+.welcome a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgb(241, 23, 23);
+    border-radius: 20px;
 }
 
 .banner-left h1 {
@@ -250,6 +287,11 @@ footer hr {
     .banner {
         flex-direction: column;
 
+
+    }
+
+    .banner-left a {
+        font-size: 20px;
 
     }
 

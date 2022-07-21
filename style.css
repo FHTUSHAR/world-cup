@@ -305,6 +305,10 @@ footer hr {
 
     }
 
+    .banner-left a {
+        font-size: 20px;
+    }
+
     .banner-left p {
 
         text-overflow: ellipsis;
