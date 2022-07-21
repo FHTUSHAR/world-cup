@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+@keyframes example {
+    0% {
+        left: 0;
+        top: 0;
+    }
+
+
+
+    100% {
+        left: 200px;
+        top: 0px;
+    }
+}
+
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -10,6 +24,7 @@ body {
     margin: 0 auto;
 
 }
+
 
 /* -- Banner style start -- */
 .banner {
@@ -36,6 +51,30 @@ p {
 
 }
 
+.animation {
+    margin-top: 30px;
+    height: 30px;
+}
+
+.welcome {
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+.welcome a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgb(241, 23, 23);
+    border-radius: 20px;
+}
+
+
 .banner-left h1 {
     font-size: 70px;
     margin-bottom: 20px;
@@ -57,6 +96,7 @@ p {
 
 .banner-left p {
     margin-bottom: 40px;
+    text-overflow: ellipsis;
 }
 
 .banner-left a:hover {
@@ -70,6 +110,8 @@ p {
     height: 536px;
     margin-top: 10px;
 }
+
+
 
 /* -- Banner style end -- */
 /* Match blog style start */
@@ -261,6 +303,11 @@ footer hr {
     .banner-left h1 {
         font-size: 40px;
 
+    }
+
+    .banner-left p {
+
+        text-overflow: ellipsis;
     }
 
     .banner-right img {
